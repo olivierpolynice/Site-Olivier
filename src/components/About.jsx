@@ -5,10 +5,10 @@ export default function About() {
     <section id="about" className="about-animated">
       <div style={styles.container}>
         <img
-  src="/photo-olivier.jpg"
-  alt="Olivier Polynice"
-  style={styles.image}
-/>
+          src="/photo-olivier.jpg"
+          alt="Olivier Polynice"
+          style={styles.image}
+        />
 
         <div style={styles.text}>
           <h2 style={styles.title}>Olivier Polynice</h2>
@@ -16,10 +16,9 @@ export default function About() {
           <p style={styles.description}>
             Passionné par la cybersécurité, le cloud computing et les réseaux,
             je suis diplômé d’une Licence en Cybersécurité, Cloud et Systèmes
-            Réseaux et je prépare actuellement un Master 1.  
-            Mon objectif est de devenir un expert en sécurisation
-            d’infrastructures, déploiement cloud (AWS, Azure) et administration
-            systèmes.
+            Réseaux et je prépare actuellement un Master 1. Mon objectif est de
+            devenir un expert en sécurisation d’infrastructures, déploiement
+            cloud (AWS, Azure) et administration systèmes.
           </p>
 
           <div style={styles.buttons}>
@@ -29,12 +28,14 @@ export default function About() {
             <a href="#contact" className="btn">
               ✉️ Me contacter
             </a>
-            <p style={styles.social}>
-  👉 <a href="https://www.linkedin.com/in/olivier-polynice/" target="_blank" rel="noreferrer">
-    Voir mon profil LinkedIn
-  </a>
-</p>
-
+            <a
+              href="https://www.linkedin.com/in/olivier-polynice/"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-linkedin"
+            >
+              🔗 Voir mon LinkedIn
+            </a>
           </div>
         </div>
       </div>
@@ -63,9 +64,4 @@ const styles = {
   subtitle: { fontSize: "20px", color: "#4f46e5", marginBottom: "15px" },
   description: { fontSize: "16px", color: "#374151", marginBottom: "20px" },
   buttons: { display: "flex", gap: "12px", flexWrap: "wrap" },
-  social: {
-  marginTop: "15px",
-  fontSize: "14px",
-},
-
 };
